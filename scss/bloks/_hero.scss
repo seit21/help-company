@@ -1,0 +1,185 @@
+.hero{
+  display: flex;
+  width: 1320px;
+  height: 685px;
+  
+  margin: 0 auto;
+  background-image: url(/images/cover.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+    &__text{
+
+      width: 575px;
+      height: 100%;
+      
+        &-care{
+          padding-top: 170px;
+          color: var(--text-color, #252b42);
+          font-family: Montserrat;
+          font-size: 58px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: 80px; /* 137.931% */
+          letter-spacing: 0.2px;
+        }
+        &-obj{
+          padding-top: 35px;
+      color: var(--second-text-color, #737373);
+      font-family: Montserrat;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 30px; /* 150% */
+      letter-spacing: 0.2px;
+        }
+        &-btn{
+          display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding-top: 35px;
+      &-largebtn {
+        display: flex;
+        padding: 10px 36px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        border-radius: 37px;
+        background: var(--secondary-color-1, #00a0c1);
+        color: var(--light-text-color, #fff);
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 28px; /* 200% */
+        letter-spacing: 0.2px;
+      }
+      &-smalbtn {
+        display: flex;
+        padding: 10px 36px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        border-radius: 37px;
+        border: 1px solid var(--secondary-color-1, #00a0c1);
+        color: var(--secondary-color-1, #00a0c1);
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 28px; /* 200% */
+        letter-spacing: 0.2px;
+      }
+          // &-mob{
+          //   display: none;
+          // }
+        }
+
+    }
+    &__img{
+      width: 745px;
+      height: 100%;
+      
+    }
+    &__mob{
+      display: none;
+    }
+}
+
+@media screen and (max-width: 420px) {
+  .hero {
+    // display: flex;
+    // flex-direction: column;
+          width: 100%;
+          height: 1200px;
+          background-image: none;
+  
+          
+    background-image: url(/images/cover\ \(1\).png);
+    background-repeat: no-repeat;
+
+  }
+  .hero__text{
+    width: 100%;
+    height: 575px;
+  }
+  .hero__img{
+    display: none;
+  }
+  .hero__mob{
+    width: 100%;
+    height: 580px;
+    border: 1px solid;
+
+  }
+  .hero__text-care{
+    color: var(--text-color, #252B42);
+text-align: center;
+font-family: Montserrat;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 57px; /* 142.5% */
+letter-spacing: 0.2px;
+  }
+  .hero__text-obj{
+    color: var(--second-text-color, #737373);
+text-align: center;
+font-family: Montserrat;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 30px; /* 150% */
+letter-spacing: 0.2px;
+  }
+  .hero__text-btn{
+    display: flex;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+  }
+  .hero__text-btn-largebtn{
+    display: flex;
+padding: 10px 36px;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+border-radius: 37px;
+background: var(--secondary-color-1, #00A0C1);
+color: var(--light-text-color, #FFF);
+text-align: center;
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 28px; /* 200% */
+letter-spacing: 0.2px;
+  }
+  .hero__text-btn-smalbtn{
+    display: flex;
+padding: 10px 36px;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+border-radius: 37px;
+border: 1px solid var(--secondary-color-1, #00A0C1);
+color: var(--secondary-color-1, #00A0C1);
+text-align: center;
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 28px; /* 200% */
+letter-spacing: 0.2px;
+  }
+  // .hero__img{
+  //   display: none;
+  // }
+  // .hero__mob{
+  //   width: 100%;
+  //   height: 580px;
+  //   border: 1px solid;
+  // } 
+
+}  
